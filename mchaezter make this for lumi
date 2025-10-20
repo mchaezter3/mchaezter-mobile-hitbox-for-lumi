@@ -1,6 +1,6 @@
 -- Invisible Hitbox Expander (Toggle with Button or T, size 5)
 -- Shows green (ON) or red (OFF) circle at top-right corner
--- Made by Mchaezter
+-- Made by Mchaezter for Lumi
 
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
@@ -12,7 +12,7 @@ _G.Disabled = false -- false = ON, true = OFF
 -- Create GUI
 local gui = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui"))
 gui.ResetOnSpawn = false
-gui.Name = "HitboxIndicator_Mchaezter"
+gui.Name = "HitboxIndicator_MchaezterLumi"
 
 -- Indicator (green/red light)
 local indicator = Instance.new("Frame")
@@ -28,10 +28,10 @@ corner.Parent = indicator
 
 -- "Made by" label
 local label = Instance.new("TextLabel")
-label.Size = UDim2.new(0, 150, 0, 20)
-label.Position = UDim2.new(1, -160, 0, 40)
+label.Size = UDim2.new(0, 180, 0, 20)
+label.Position = UDim2.new(1, -190, 0, 40)
 label.BackgroundTransparency = 1
-label.Text = "Made by Mchaezter"
+label.Text = "Made by Mchaezter for Lumi"
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextStrokeTransparency = 0.7
 label.TextScaled = true
